@@ -158,6 +158,11 @@ html[data-lang="en"] p.lang-en, html[data-lang="en"] small.lang-en, html[data-la
 .phone-link { display: inline-block; margin-top: 25px; color: var(--green-800); border-bottom: 1px solid var(--gold); font: 600 1.2rem var(--font-en); }
 .contact-person { display: flex; flex-direction: column; align-items: flex-start; width: fit-content; }
 .contact-owner { margin-top: 9px; color: var(--muted); font-size: .88rem; }
+.contact-socials { display: flex; gap: 10px; margin-top: 20px; }
+.contact-socials a { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 9px 14px; border: 1px solid var(--line); color: var(--green-800); font: 600 .78rem var(--font-en); transition: color .2s, border-color .2s, background .2s, transform .2s; }
+.contact-socials a:hover { color: #fff; border-color: var(--green-800); background: var(--green-800); transform: translateY(-2px); }
+.contact-socials svg, .footer-socials svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.contact-socials .social-dot, .footer-socials .social-dot { fill: currentColor; stroke: none; }
 .quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-self: center; }
 .quote-form label { display: flex; flex-direction: column; gap: 8px; color: var(--muted); font-size: .82rem; }
 .quote-form input, .quote-form textarea, .quote-form select { width: 100%; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--ink); padding: 10px 2px 12px; outline: 0; transition: border-color .2s; }
@@ -177,6 +182,9 @@ html[data-lang="en"] p.lang-en, html[data-lang="en"] small.lang-en, html[data-la
 .footer-links a:hover { color: var(--gold-soft); }
 .footer-contact { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; margin-bottom: 4px; }
 .footer-contact small { color: rgba(255,255,255,.48); font-size: .76rem; }
+.footer-socials { display: flex; gap: 8px; margin: 6px 0 5px; }
+.footer-socials a { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; color: rgba(255,255,255,.72); transition: color .2s, border-color .2s, background .2s, transform .2s; }
+.footer-socials a:hover { color: var(--green-950); border-color: var(--gold-soft); background: var(--gold-soft); transform: translateY(-2px); }
 .footer-bottom { grid-column: 1 / -1; margin-top: 36px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; color: rgba(255,255,255,.36); font-size: .73rem; }
 .whatsapp-float { position: fixed; inset-inline-end: 22px; bottom: 22px; z-index: 80; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: #25d366; box-shadow: 0 10px 30px rgba(0,0,0,.25); transition: transform .2s; }
 .whatsapp-float:hover { transform: translateY(-3px) scale(1.03); }
@@ -254,6 +262,7 @@ html[data-lang="en"] p.lang-en, html[data-lang="en"] small.lang-en, html[data-la
   .site-footer { grid-template-columns: 1fr; }
   .footer-links { grid-column: 1; grid-row: auto; align-items: flex-start; }
   .footer-contact { align-items: flex-start; }
+  .contact-socials { flex-wrap: wrap; }
   .footer-bottom { flex-wrap: wrap; gap: 10px; }
   .dialog-shell { min-height: 0; max-height: calc(100svh - 36px); grid-template-columns: 1fr; overflow-y: auto; }
   .dialog-visual { min-height: 55svh; }

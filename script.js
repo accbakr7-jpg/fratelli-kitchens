@@ -204,8 +204,8 @@ document.querySelector("#quote-form").addEventListener("submit", (event) => {
   const type = document.querySelector("#project-type").value;
   const details = document.querySelector("#project-details").value.trim();
   const message = lang === "ar"
-    ? `مرحبًا FRATELLI، أرغب في طلب عرض سعر.\n\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالمدينة: ${city}\nنوع المشروع: ${type}\nالتفاصيل: ${details || "لم تُذكر"}`
-    : `Hello FRATELLI, I would like to request a quotation.\n\nName: ${name}\nPhone: ${phone}\nCity: ${city}\nProject type: ${type}\nDetails: ${details || "Not provided"}`;
+    ? `مرحبًا MM FRATELLI، أرغب في طلب عرض سعر.\n\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالمدينة: ${city}\nنوع المشروع: ${type}\nالتفاصيل: ${details || "لم تُذكر"}`
+    : `Hello MM FRATELLI, I would like to request a quotation.\n\nName: ${name}\nPhone: ${phone}\nCity: ${city}\nProject type: ${type}\nDetails: ${details || "Not provided"}`;
   window.open(`https://wa.me/201002400999?text=${encodeURIComponent(message)}`, "_blank", "noopener");
 });
 

@@ -114,8 +114,8 @@ function setLanguage(lang) {
   root.lang = lang;
   root.dir = lang === "ar" ? "rtl" : "ltr";
   document.title = lang === "ar"
-    ? "FRATELLI Kitchens & Wardrobes | مطابخ ودواليب حسب الطلب"
-    : "FRATELLI Kitchens & Wardrobes | Custom interiors";
+    ? "MM FRATELLI INTERIORS | مطابخ ودواليب وحلول داخلية حسب الطلب"
+    : "MM FRATELLI INTERIORS | Custom Interior Solutions";
   updateSelectOptions();
   if (activeProject) renderDialog();
   try { localStorage.setItem("fratelli-language", lang); } catch (_) {}

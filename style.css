@@ -312,3 +312,43 @@ html[data-lang="ar"] .project-info strong{font-size:clamp(1.22rem,1.65vw,1.52rem
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 @media(max-width:820px){html[data-lang="ar"] .hero h1{font-size:clamp(2.55rem,9vw,4.35rem)}html[data-lang="ar"] .hero{gap:42px}}
 @media(max-width:560px){html[data-lang="ar"] .hero h1{font-size:clamp(2.35rem,9vw,3.2rem)}html[data-lang="ar"] .hero-lead{margin-top:20px}html[data-lang="ar"] .section-heading h2,html[data-lang="ar"] .process-intro h2,html[data-lang="ar"] .about-copy h2,html[data-lang="ar"] .warranty-title h2,html[data-lang="ar"] .quote-copy h2{font-size:clamp(2.05rem,8vw,2.8rem)}}
+
+/* Refined portfolio rhythm and restrained branding */
+.site-header{border-bottom:1px solid rgba(255,255,255,.08)}
+.site-header.scrolled{box-shadow:0 12px 34px rgba(0,0,0,.16)}
+.brand img{width:148px}
+.hero{gap:clamp(35px,6vw,90px)}
+.hero-photo{aspect-ratio:.84}
+.hero-photo img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.hero-visual:hover .hero-photo img{transform:scale(1.025)}
+.trust-strip>div{min-height:108px}
+.section{padding-block:clamp(76px,8vw,116px)}
+.section-heading{margin-bottom:42px}
+.project-grid{gap:14px}
+.project-card{min-height:430px}
+.project-card-featured,.project-card-featured+.project-card{min-height:570px}
+.project-card-wide{min-height:430px}
+.collections-section{padding-bottom:clamp(76px,8vw,116px)}
+.collection-card{min-height:480px}
+.collection-card>img{min-height:480px}
+.collection-card+.collection-card{margin-top:14px}
+.service-card{min-height:270px}
+.service-card h3{margin-top:60px}
+.about-section{min-height:480px;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)}
+.about-mark{min-height:480px;padding:48px;background:radial-gradient(circle at 50% 45%,#123c2c 0,#0b2b1f 50%,#071a12 100%)}
+.about-mark::before{width:min(58%,280px)}
+.about-mark::after{width:min(82%,390px)}
+.about-mark img{width:min(62%,300px);max-height:170px;object-fit:contain}
+.about-copy{padding:clamp(54px,6vw,95px)}
+.warranty-section{padding-block:clamp(75px,8vw,110px)}
+.warranty-grid article{min-height:175px}
+.quote-section{padding-block:clamp(76px,8vw,116px)}
+.site-footer{padding:42px clamp(24px,7vw,110px) 24px;grid-template-columns:minmax(0,1fr) auto;gap:14px 30px}
+.footer-brand img{width:170px;max-height:76px;object-fit:contain;object-position:right center}
+.site-footer>p{font-size:.88rem}
+.footer-links{gap:5px}
+.footer-bottom{margin-top:20px;padding-top:16px}
+.footer-socials{margin:4px 0}
+@media(max-width:1100px){.project-card,.project-card-wide{min-height:400px}.project-card-featured,.project-card-featured+.project-card{min-height:500px}}
+@media(max-width:820px){.brand img{width:132px}.about-section{grid-template-columns:1fr}.about-mark{min-height:290px}.about-mark img{width:min(48%,240px);max-height:130px}.about-mark::before{width:210px}.about-mark::after{width:280px}.project-card,.project-card-featured,.project-card-featured+.project-card,.project-card-wide{min-height:450px}.collection-card>img,.collection-card-reverse img{min-height:420px}.site-footer{grid-template-columns:1fr}.footer-links{grid-column:1;grid-row:auto}}
+@media(max-width:560px){.hero{padding-bottom:58px}.hero-photo{aspect-ratio:1.02}.hero-project-tag{bottom:18px}.section-heading{margin-bottom:28px}.project-card,.project-card-featured,.project-card-featured+.project-card,.project-card-wide{min-height:360px}.project-info{padding:18px}.collection-card>img,.collection-card-reverse img{min-height:340px}.about-mark{min-height:230px}.about-mark img{width:185px;max-height:105px}.about-mark::before{width:170px}.about-mark::after{width:220px}.about-copy{padding:48px 22px}.warranty-grid article{min-height:120px}.footer-brand img{width:145px;max-height:64px}.site-footer{padding-top:35px}.footer-bottom{margin-top:14px}}

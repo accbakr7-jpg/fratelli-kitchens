@@ -17,6 +17,15 @@ const projects = {
     },
     images: ["mansoura-01.webp", "mansoura-02.webp", "mansoura-03.webp"]
   },
+  mansouraHome: {
+    location: { ar: "المنصورة", en: "Mansoura" },
+    title: { ar: "مطبخ وخزائن سكنية في المنصورة", en: "Mansoura kitchen and bespoke storage" },
+    description: {
+      ar: "مشروع سكني يجمع مطبخًا بواجهات فاتحة ووحدات عرض زجاجية مضاءة، وغرفة ملابس بتشطيب خشبي وأبواب زجاجية، إلى جانب وحدة تلفزيون ووحدة حمام.",
+      en: "A residential project bringing together a light-toned kitchen with illuminated glass displays, a wood-finish dressing room with glass doors, a TV unit and a bathroom vanity."
+    },
+    images: ["mansoura-home-kitchen-01.jpg", "mansoura-home-kitchen-02.jpg", "mansoura-home-kitchen-03.jpg", "mansoura-home-kitchen-04.jpg", "mansoura-home-dressing-01.jpg", "mansoura-home-dressing-02.jpg", "mansoura-home-dressing-03.jpg", "mansoura-home-tv-01.jpg"]
+  },
   mashreq: {
     location: { ar: "التجمع الخامس", en: "New Cairo" },
     title: { ar: "تأثيث وتجهيز مقر شركة المشرق", en: "Al Mashreq corporate interior fit-out" },
